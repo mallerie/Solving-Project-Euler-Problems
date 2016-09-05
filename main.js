@@ -15,10 +15,9 @@ function sumOfArray() {
     return a + b;
   });
 
+  console.log(sum);
+
 }
-
-sumOfArray();
-
 
 // Project Euler Problem 2
 // Project Euler Problem 3
