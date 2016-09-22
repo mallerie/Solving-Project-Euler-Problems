@@ -35,26 +35,32 @@ var total = 0;
 
 function evenFibonacciTotal() {
 
-  for (var i = 0; i++) {
+  for (var i = 0; i < 36; i++) {
     if (i === 0) {
     arr.push(i);
     } else if (i === 1) {
     arr.push(i);
+    }  else if (arr[i] > 4000000) {
+      break;
     } else if (i >= 2 ) {
       arr[i] = ( arr[i - 2] ) + ( arr[i - 1] );
       arr.push(arr[i]);
-    } else if (arr[i] >= 4000000) {
-      break;
     }
   }
+    console.log(arr);
 }
 
 evenFibonacciTotal();
 
-// while (i < 10) {
+
+// while (arr[i] < 4000000) {
 //     text += "The number is " + i;
 //     i++;
 // }
+
+for (var i = 0; i <= 4; i++) {
+  
+}
 
 
 
