@@ -30,30 +30,6 @@ sumOfArray();
 //By considering the terms in the Fibonacci sequence whose values do not 
 //exceed four million, find the sum of the even-valued terms.
 
-var arr = [];
-var total = 0;
-
-function evenFibonacciTotal() {
-
-  for (var i = 0;; i++) {
-    if (i === 0) {
-    arr.push(i);
-    } else if (i === 1) {
-    arr.push(i);
-    } else if (arr[i] > 4000000) {
-      arr.pop();
-      arr.pop();
-      break;
-    } else if (i >= 2 ) {
-      arr[i] = ( arr[i - 2] ) + ( arr[i - 1] );
-      arr.push(arr[i]);
-    }
-  }
-    console.log(arr);
-}
-
-evenFibonacciTotal();
-// Below this line is test code
 
 var arr = [];
 var total = 0;
@@ -69,7 +45,6 @@ function evenFibonacciTotal() {
       break;
     } else if (i >= 2 ) {
       arr[i] = ( arr[i - 2] ) + ( arr[i - 1] );
-      arr.push(arr[i]);
     }
   }
     console.log(arr);
@@ -77,15 +52,6 @@ function evenFibonacciTotal() {
 
 evenFibonacciTotal();
 
-
-// while (arr[i] < 4000000) {
-//     text += "The number is " + i;
-//     i++;
-// }
-
-for (var i = 0; i <= 4; i++) {
-  
-}
 
 
 
