@@ -53,6 +53,29 @@ function evenFibonacciTotal() {
 }
 
 evenFibonacciTotal();
+// Below this line is test code
+
+var arr = [];
+var total = 0;
+
+function evenFibonacciTotal() {
+
+  for (var i = 0;; i++) {
+    if (i === 0) {
+    arr.push(i);
+    } else if (i === 1) {
+    arr.push(i);
+    } else if ( (arr[i - 2] + arr[i - 1]) > 4000000) {
+      break;
+    } else if (i >= 2 ) {
+      arr[i] = ( arr[i - 2] ) + ( arr[i - 1] );
+      arr.push(arr[i]);
+    }
+  }
+    console.log(arr);
+}
+
+evenFibonacciTotal();
 
 
 // while (arr[i] < 4000000) {
